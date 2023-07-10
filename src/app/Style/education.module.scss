@@ -67,13 +67,11 @@ $primaryColor: #0A6EBD;
 
 
     .MainContainer{
-        // border: 2px solid red;
         margin-top: 100px;
         display: flex;
         justify-content: center;
         gap: 200px;
         height: 500px;
-        // padding: 0 120px 0 400px;
 
 
         .dateContainer{
@@ -83,8 +81,6 @@ $primaryColor: #0A6EBD;
             justify-content: space-around;
             width: 50%;
 
-            // border: 2px solid green;
-
         }
 
 
@@ -93,7 +89,6 @@ $primaryColor: #0A6EBD;
             flex-direction: column;
             justify-content: space-around;
             width: 50%;
-            // border: 2px solid green;
             .Detail{
 
                 h4{
@@ -145,7 +140,6 @@ $primaryColor: #0A6EBD;
                         font-weight: 600;
                     }
                     h6{
-                        // font-weight: 500;
                         font-size: 18px;
                     }
                     p{
@@ -173,7 +167,6 @@ $primaryColor: #0A6EBD;
                     .date{
                         p{
                             font-size: 14px;
-                            // border: 2px solid red;
                         }
                         
                     }
@@ -210,7 +203,6 @@ $primaryColor: #0A6EBD;
         .btnContainer {
             gap: 1rem;
             .eduBtn {
-                // font-size: 12px;
                 padding: 10px 12px;
             }
         }

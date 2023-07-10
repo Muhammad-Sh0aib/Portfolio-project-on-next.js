@@ -43,19 +43,16 @@ $primaryColor: #0A6EBD;
             padding: 0 180px;
             width: 100%;
             display: flex;
-            // align-items: center;
             justify-content: center;
             flex-direction: column;
             height: 100vh;
 
             h6 {
                 font-size: 38px;
-                // color: white;
                 letter-spacing: 0.1rem;
             }
 
             h2 {
-                // color: white;
                 font-size: 56px;
                 font-weight: 900;
                 letter-spacing: 0.1rem;
@@ -218,7 +215,6 @@ $primaryColor: #0A6EBD;
                 .img {
                     width: 150px;
                     height: 150px;
-                    // margin-right: 25px;
                 }
                 .imgBack {
                     width: 150px;
@@ -228,14 +224,12 @@ $primaryColor: #0A6EBD;
             }
 
             .content {
-                // padding: 0 50px;
                 h2 {
                     font-size: 20px;
                 }
 
                 h6 {
                     font-size: 14px;
-                    // font-weight: 500;
                 }
             }
         }
@@ -244,14 +238,7 @@ $primaryColor: #0A6EBD;
         .Container {
             .imgContainer {
                 .img {
-                    // width: 150px;
-                    // height: 150px;
                     margin-right: 10px;
-                }
-                .imgBack {
-                    // width: 150px;
-                    // height: 150px;
-                    // border: 8px solid $primaryColor;
                 }
             }
 
@@ -259,15 +246,12 @@ $primaryColor: #0A6EBD;
                 padding: 0 30px;
                 
                 h2 {
-                    // font-size: 20px;
-                    // border: 2px solid red;
                     width: 180px;
                     letter-spacing: 0.05rem;
                 }
 
                 h6 {
                     font-size: 12px;
-                    // font-weight: 500;
                     letter-spacing: 0.05rem;
                 }
             }
@@ -277,7 +261,6 @@ $primaryColor: #0A6EBD;
         .content {
             .socailContainer {
                 margin-bottom: 60px !important;
-                // border: 2px solid red;
             }
         }
     }

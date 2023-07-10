@@ -1,11 +1,5 @@
-import React from "react";
 import Image from "next/image";
-// import photo from '../assets/bg.jpeg'
 import styles from "../Style/about.module.scss";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowUp } from "@fortawesome/free-solid-svg-icons";
-
-// import '../page.module.css'
 
 const About = () => {
 
@@ -31,12 +25,8 @@ const About = () => {
         </div>
 
         <div className={styles.aboutContent}>
-          {/* <div className={"headingContent"}>
-          <h2 className={"mainHeading"}>About Me</h2>
-          <h6 className={"subHeading"}>who i am</h6>
-        </div> */}
 
-          <h4>I am Muhammad Shoaib, Frontend Developer</h4>
+          <h4>I'm Muhammad Shoaib, Frontend Developer</h4>
           <p>
             I am doing Bachelors in Software Engineering from Sindh Madressatul
             Islam University. I have been working on JavaScript libraries and
@@ -59,14 +49,6 @@ const About = () => {
 
       
     </div>
-
-{/* <div className={`${styles.arrowContainer}`}>
-<div className={styles.topArrow}>
-  <a href="#home">
-  <FontAwesomeIcon icon={faArrowUp} className={styles.arrowIcon}/>
-  </a>
-</div>
-</div> */}
 
 </>
   );

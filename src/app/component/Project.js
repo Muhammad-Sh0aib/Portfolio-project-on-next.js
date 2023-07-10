@@ -1,5 +1,3 @@
-import React from "react";
-// import Image from "next/image";
 import styles from "../Style/project.module.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCode } from "@fortawesome/free-solid-svg-icons";

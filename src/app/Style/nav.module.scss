@@ -69,7 +69,6 @@ $SecondaryColor: #ffffff;
 
             li {
                 color: black;
-                // transition: ease-in-out 0.3s;
                 font-weight: 600;
                 letter-spacing: 0.05rem;
                 position: relative;
@@ -77,10 +76,7 @@ $SecondaryColor: #ffffff;
                 &::after {
                     content: '';
                     position: absolute;
-                    // width: 100%;
                     height: 2px;
-                    // transition: all 0.5s ease;
-                    // top: 0;
                     left: 0;
                     bottom: -5px;
 
@@ -117,13 +113,6 @@ $SecondaryColor: #ffffff;
             }
         }
 
-        // &:hover{
-        //     .Link {
-        //         li{
-        //             background-color: red;
-        //         }
-        //     }
-        // }
 
 
     }
@@ -153,20 +142,8 @@ $SecondaryColor: #ffffff;
             justify-content: space-between;
             margin-top: 20px;
 
-            // .logo{
-            //     .logo_circle{
-            //         background-color: rgb(31, 31, 31);
-            //     }
-            //     a{
-            //         h2{
-            //             color: white;
-            //         }
-            //     }
-            // }
-
             .navIcon {
                 display: block;
-                // color: white;
             }
 
         }
@@ -179,7 +156,6 @@ $SecondaryColor: #ffffff;
             
 
             ul {
-                // width: 100%;
                 padding: 0;
                 gap: 0 !important;
                 
@@ -187,9 +163,7 @@ $SecondaryColor: #ffffff;
                 .Link {
                     
 
-                    // width: 100%;
                     li {
-                        // width: 100%;
                         text-align: center;
                         padding: 15px 0;
                         color: white;

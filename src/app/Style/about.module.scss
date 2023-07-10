@@ -13,10 +13,8 @@ $primaryColor: #0A6EBD;
         display: flex;
 
         .aboutImg {
-            // border: 2px solid red;
 
             .img {
-                // border: 2px solid green;
                 box-shadow: 0px 2px 18px 4px rgba($color: #023e6d, $alpha: 0.2);
                 object-fit: cover;
                 object-position: 140% 140%;
@@ -75,7 +73,6 @@ $primaryColor: #0A6EBD;
             h4 {
                 font-size: 20px;
                 letter-spacing: 0rem;
-                // margin-bottom: 20px;
             }
 
             p {
@@ -94,7 +91,6 @@ $primaryColor: #0A6EBD;
             flex-direction: column;
 
             .aboutImg {
-                // border: 2px solid red;
                 display: flex;
                 justify-content: center;
 
@@ -104,7 +100,6 @@ $primaryColor: #0A6EBD;
 
             }
             .aboutContent {
-                // border: 2px solid green;
                 margin: 80px 0 0 0;
                 p {
                     margin: 20px 0 40px 0;
@@ -118,14 +113,9 @@ $primaryColor: #0A6EBD;
     }
 
     @media (max-width: 600px){
-        // padding: 80px 50px;
         .aboutSuper {
-            // flex-direction: column;
 
             .aboutImg {
-                // border: 2px solid red;
-                // display: flex;
-                // justify-content: center;
 
                 .img{
                     width: 250px;
@@ -134,20 +124,14 @@ $primaryColor: #0A6EBD;
 
             }
             .aboutContent {
-                // margin-left: 60px;
     
                 h4 {
                     font-size: 18px;
-                    // letter-spacing: 0rem;
-                    // margin-bottom: 20px;
                 }
     
                 p {
-                    // margin: 20px 0 40px 0;
                     font-size: 14px;
                         margin: 0px 0 40px 0;
-                    // letter-spacing: 0.05rem;
-                    // line-height: 1.6rem;
     
                 }
             }
@@ -161,25 +145,3 @@ $primaryColor: #0A6EBD;
     }
 }
 
-
-// .arrowContainer{
-//     padding-right: 20px;
-//     width: 100%;
-//     display: flex;
-//     justify-content: flex-end;
-//     .topArrow{
-//         // z-index: -2;
-//         position: fixed;
-//         top: 90vh;
-//         width: 35px;
-//         height: 35px;
-//         border-radius: 50%;
-//         background-color: black;
-//         display: flex;
-//         align-items: center;
-//         justify-content: center;
-//         .arrowIcon{
-//             color: white;
-//         }
-//     }
-// }

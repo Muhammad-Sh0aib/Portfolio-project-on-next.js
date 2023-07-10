@@ -1,4 +1,3 @@
-import React from "react";
 import "../globals.scss";
 import styles from "../Style/skill.module.scss";
 
@@ -16,8 +15,6 @@ const Skill = () => {
 
 
       <div className={styles.skilldetail}>
-
-{/* Html  */}
       <div className={styles.skillContainer}>
         <div className={styles.iconName}>
           <h6>HTML</h6>
@@ -25,7 +22,7 @@ const Skill = () => {
         <div className={styles.bar}></div>
       </div>
 
-{/* CSS */}
+
       <div className={styles.skillContainer}>
         <div className={styles.iconName}>
           <h6>CSS</h6>
@@ -33,7 +30,6 @@ const Skill = () => {
         <div className={styles.bar}></div>
       </div>
 
-{/* Bootstrap */}
       <div className={styles.skillContainer}>
         <div className={styles.iconName}>
           <h6>Bootstrap</h6>
@@ -41,7 +37,7 @@ const Skill = () => {
         <div className={styles.bar}></div>
       </div>
 
-      {/* Javascript */}
+
       <div className={styles.skillContainer}>
         <div className={styles.iconName}>
           <h6>Javascript</h6>
@@ -49,7 +45,7 @@ const Skill = () => {
         <div className={styles.bar}></div>
       </div>
 
-      {/* React.js */}
+
       <div className={styles.skillContainer}>
         <div className={styles.iconName}>
           <h6>React.js</h6>
@@ -58,7 +54,7 @@ const Skill = () => {
       </div>
 
 
-      {/* Next.js */}
+
       <div className={styles.skillContainer}>
         <div className={styles.iconName}>
           <h6>Next.js</h6>

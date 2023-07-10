@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "../Style/education.module.scss";
 import { useState } from "react";
 
@@ -77,17 +76,14 @@ const Education = () => {
           <div className={styles.detailContainer}>
             <div className={styles.Detail}>
               <h4>Cloud Computing</h4>
-              {/* <h6>Software Engineering</h6> */}
               <p>From Piaic</p>
             </div>
             <div className={styles.Detail}>
               <h4>Web & App Development</h4>
-              {/* <h6>Pre-Engineering</h6> */}
               <p>From Saylani Mass IT Traning</p>
             </div>
             <div className={styles.Detail}>
               <h4>Graphic Design</h4>
-              {/* <h6>Science</h6> */}
               <p>From Click 5</p>
             </div>
           </div>
