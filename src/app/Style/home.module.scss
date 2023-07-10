@@ -1,0 +1,284 @@
+$primaryColor: #0A6EBD;
+
+.HomeSection {
+    
+    background-color: rgba($color: $primaryColor, $alpha: 0.1);
+    width: 100%;
+    height: 100vh;
+    position: relative;
+
+    .Container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        height: 100vh;
+        justify-content: center;
+
+        .imgContainer {
+            position: relative;
+
+
+            .img {
+                object-fit: cover;
+                margin-right: 140px;
+                transform: rotateY(180deg);
+                object-position: 100% 100%;
+            }
+
+            .imgBack {
+
+                position: absolute;
+                z-index: -1;
+                top: -20px;
+                left: -20px;
+                width: 350px;
+                height: 350px;
+                border: 12px solid $primaryColor;
+            }
+        }
+
+
+        .content {
+            position: absolute;
+            padding: 0 180px;
+            width: 100%;
+            display: flex;
+            // align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 100vh;
+
+            h6 {
+                font-size: 38px;
+                // color: white;
+                letter-spacing: 0.1rem;
+            }
+
+            h2 {
+                // color: white;
+                font-size: 56px;
+                font-weight: 900;
+                letter-spacing: 0.1rem;
+
+
+            }
+
+            .socailContainer {
+                display: flex;
+                gap: 20px;
+                align-items: center;
+                justify-content: flex-start;
+                margin-bottom: 40px;
+
+                .SocialImg {
+                    border-radius: 8px;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 1320px) {
+        .Container {
+
+            .imgContainer {
+                margin-top: 40px;
+
+                .img {
+                    margin-right: 80px;
+                }
+            }
+
+            .content {
+                padding: 0 100px;
+                margin-top: 40px;
+
+                h2 {
+                    font-size: 48px;
+                }
+
+                h6 {
+                    font-size: 32px;
+                }
+            }
+        }
+
+    }
+
+    @media (max-width: 1120px) {
+        .Container {
+
+            .imgContainer {
+                .img {
+                    width: 300px;
+                    height: 300px;
+                }
+
+                .imgBack {
+                    width: 300px;
+                    height: 300px;
+                }
+
+            }
+
+            .content {
+
+                h2 {
+                    font-size: 36px;
+                }
+
+                h6 {
+                    font-size: 24px;
+                    font-weight: 700;
+                }
+            }
+        }
+
+    }
+
+    @media (max-width: 900px) {
+        .Container {
+            .imgContainer {
+                .img {
+                    width: 250px;
+                    height: 250px;
+                    margin-right: 50px;
+                }
+
+                .imgBack {
+                    width: 250px;
+                    height: 250px;
+                }
+
+            }
+
+            .content {
+                padding: 0 80px;
+                h2 {
+                    font-size: 32px;
+                }
+
+                h6 {
+                    font-size: 20px;
+                    font-weight: 600;
+                }
+
+
+                .socailContainer {
+                    
+
+                    .SocialImg {
+                        width: 30px;
+                        height: 30px;
+                        border-radius: 6px;
+                    }
+                }
+            }
+
+        }
+
+    }
+
+    @media (max-width: 740px){
+        .Container {
+            .imgContainer {
+                .img {
+                    width: 200px;
+                    height: 200px;
+                    margin-right: 25px;
+                }
+                .imgBack {
+                    width: 200px;
+                    height: 200px;
+                }
+            }
+
+            .content {
+                padding: 0 50px;
+                h2 {
+                    font-size: 28px;
+                }
+
+                h6 {
+                    font-size: 18px;
+                    font-weight: 500;
+                }
+                .socailContainer {
+                    .SocialImg {
+                        width: 24px;
+                        height: 24px;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 600px){
+        .Container {
+            .imgContainer {
+                .img {
+                    width: 150px;
+                    height: 150px;
+                    // margin-right: 25px;
+                }
+                .imgBack {
+                    width: 150px;
+                    height: 150px;
+                    border: 8px solid $primaryColor;
+                }
+            }
+
+            .content {
+                // padding: 0 50px;
+                h2 {
+                    font-size: 20px;
+                }
+
+                h6 {
+                    font-size: 14px;
+                    // font-weight: 500;
+                }
+            }
+        }
+    }
+    @media (max-width: 480px){
+        .Container {
+            .imgContainer {
+                .img {
+                    // width: 150px;
+                    // height: 150px;
+                    margin-right: 10px;
+                }
+                .imgBack {
+                    // width: 150px;
+                    // height: 150px;
+                    // border: 8px solid $primaryColor;
+                }
+            }
+
+            .content {
+                padding: 0 30px;
+                
+                h2 {
+                    // font-size: 20px;
+                    // border: 2px solid red;
+                    width: 180px;
+                    letter-spacing: 0.05rem;
+                }
+
+                h6 {
+                    font-size: 12px;
+                    // font-weight: 500;
+                    letter-spacing: 0.05rem;
+                }
+            }
+        }
+    }
+    @media (max-width: 420px){
+        .content {
+            .socailContainer {
+                margin-bottom: 60px !important;
+                // border: 2px solid red;
+            }
+        }
+    }
+}

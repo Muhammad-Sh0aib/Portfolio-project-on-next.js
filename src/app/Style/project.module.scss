@@ -1,0 +1,209 @@
+$primaryColor: #0A6EBD;
+
+.projectSection {
+    padding:180px;
+    background-color: rgba($color: $primaryColor, $alpha: 0.1);
+
+
+
+    .CardsContainer {
+        margin-top: 40px;
+        .proCard {
+            background-color: white;
+            width: 380px;
+            box-shadow: 0px 2px 18px 4px rgba($color: #023e6d, $alpha: 0.1);
+            border-radius: 10px;
+            transition: ease-in-out 0.4s;
+            padding: 20px 30px;
+
+            a {
+                text-decoration: none;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+
+                h2 {
+                    font-size: 36px;
+                    font-weight: bolder;
+                    color: $primaryColor;
+                    // text-align: center;
+                    transition: ease-in-out 0.4s;
+                }
+
+                .iconCricle {
+                    width: 80px;
+                    height: 80px;
+                    border-radius: 50%;
+                    margin: 20px 0;
+                    background-color: rgba($color: $primaryColor, $alpha: 0.1);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    transition: ease-in-out 0.4s;
+
+                    .codeIcon {
+                        font-size: 32px;
+                        color: $primaryColor;
+                    }
+
+                }
+
+                p {
+                    color: black;
+                    transition: ease-in-out 0.4s;
+                }
+
+            }
+
+
+            .cardBtn {
+                display: flex;
+                gap: 10px;
+                width: 100%;
+                // border: 2px solid red;
+
+                a {
+                    width: 50%;
+                    text-decoration: none;
+                }
+
+                .btn {
+                    border: 2px solid white;
+                    border-radius: 6px;
+                    padding: 12px 12px;
+                    text-align: center;
+                    color: white;
+                    background-color: $primaryColor;
+                    width: 100%;
+                    transition: ease-in-out 0.3s;
+
+                    h6 {
+                        margin: 0;
+                        font-size: 18px;
+                        transition: ease-in-out 0.3s;
+                    }
+
+                    &:hover {
+                        box-shadow: 0px 2px 18px 6px rgba($color: #000000, $alpha: 0.3);
+                        background-color: rgb(243, 243, 243);
+                        border: 2px solid rgb(243, 243, 243);
+                        h6{
+                            font-weight: 600;
+                        }
+                    }
+                }
+
+
+
+
+            }
+
+
+
+            &:hover {
+                transform: scale(1.05);
+                background-color: $primaryColor;
+                box-shadow: 0px 2px 18px 4px rgba($color: #000000, $alpha: 0.2);
+                color: white;
+                cursor: pointer;
+
+                h2 {
+                    color: white;
+                }
+
+                .iconCricle {
+                    background-color: white;
+                }
+                p{
+                    color: white;
+                }
+
+
+                .btn{
+                        color: $primaryColor;
+                        background-color: white;
+                        cursor: pointer;
+                    
+                }
+
+            }
+
+
+        }
+
+
+    }
+
+
+    @media (max-width: 1320px) {
+        padding: 100px 100px;
+    }
+    @media (max-width: 900px){
+        padding: 100px 80px;
+        .CardsContainer {
+            .proCard {
+                width: 320px;
+                a {
+                    h2{
+                        font-size: 28px;
+                    }
+                    .iconCricle {
+                        width: 60px;
+                        height: 60px;
+                        .codeIcon {
+                            font-size: 24px;
+                        }
+                    }
+                    p {
+                        font-size: 14px;
+                    }
+                }
+                .cardBtn {
+                    .btn {
+                        padding: 10px 8px;
+                        h6{
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width: 740px){
+        padding: 100px 50px;
+    }
+    @media (max-width: 600px){
+        .CardsContainer {
+            .proCard {
+                width: 280px;
+                a {
+                    h2{
+                        font-size: 24px;
+                    }
+                    .iconCricle {
+                        width: 50px;
+                        height: 50px;
+                        .codeIcon {
+                            font-size: 18px;
+                        }
+                    }
+                    p {
+                        font-size: 12px;
+                    }
+                }
+                .cardBtn {
+                    .btn {
+                        padding: 10px 8px;
+                        h6{
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width: 480px){
+        padding: 80px 30px;
+    }
+}

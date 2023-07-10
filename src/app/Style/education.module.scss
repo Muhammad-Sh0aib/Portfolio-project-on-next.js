@@ -1,0 +1,218 @@
+$primaryColor: #0A6EBD;
+
+.EducationSection {
+    padding: 100px 180px;
+    background-color: $primaryColor;
+    color: white;
+    position: relative;
+
+
+    .btnContainer {
+
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+
+        .eduBtn {
+            background-color:  $primaryColor;
+            color: white;
+            font-size: 16px;
+            border: 2px solid rgb(247, 247, 247);
+            padding: 12px 36px;
+            transition: ease-in-out 0.3s;
+            border-radius: 6px;
+            letter-spacing: 0.1rem;
+            font-weight: 600;
+            
+
+            &:hover {
+                box-shadow: 0px 0px 18px 4px rgba($color: #023e6d, $alpha: 0.3);
+                background-color: rgb(247, 247, 247);
+                color: $primaryColor;
+                border: 2px solid rgb(247, 247, 247);
+
+            }
+        }
+    }
+
+
+
+    .sperator{
+        position: absolute;
+        align-items: center;
+        top: 250px;
+        left: 50%;
+        width: 5px;
+        height: 500px;
+        background-color: rgba($color: #ffffff, $alpha: 0.3);
+        border-radius: 10px;
+    }
+
+    .circles{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        top: 246px;
+        justify-content: space-around;
+        height: 500px;
+        left: 49.7%;
+
+        .cir{
+            width: 15px;
+            height: 15px;
+            border-radius: 10px;
+            background-color: white;
+        }
+    }
+
+
+    .MainContainer{
+        // border: 2px solid red;
+        margin-top: 100px;
+        display: flex;
+        justify-content: center;
+        gap: 200px;
+        height: 500px;
+        // padding: 0 120px 0 400px;
+
+
+        .dateContainer{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            justify-content: space-around;
+            width: 50%;
+
+            // border: 2px solid green;
+
+        }
+
+
+        .detailContainer{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            width: 50%;
+            // border: 2px solid green;
+            .Detail{
+
+                h4{
+                    font-size: 26px;
+                    font-weight: 700;
+                }
+                h6{
+                    font-weight: 500;
+                    font-size: 20px;
+                }
+                p{
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+
+    @media (max-width: 1320px){
+        padding: 100px 100px;
+    }
+    @media (max-width: 900px){
+        padding: 100px 80px;
+        .btnContainer {
+            .eduBtn {
+                font-size: 14px;
+                padding: 12px 28px;
+            }
+        }
+        .circles{
+            left: 49.6%;
+            top: 242px;
+        }
+        .MainContainer{
+            gap: 100px;
+        }
+    }
+    @media (max-width: 740px){
+        padding: 100px 50px;
+        .circles{
+            left: 49.5%;
+        }
+        .MainContainer{
+            .detailContainer{
+                .Detail{
+
+                    h4{
+                        font-size: 22px;
+                        font-weight: 600;
+                    }
+                    h6{
+                        // font-weight: 500;
+                        font-size: 18px;
+                    }
+                    p{
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width: 600px){
+        .btnContainer {
+            .eduBtn {
+                font-size: 12px;
+                padding: 10px 16px;
+            }
+        }
+        .circles{
+            left: 49.4%;
+            top: 238px;
+        }
+        .MainContainer{
+            gap: 60px;
+            
+                .dateContainer{
+                    .date{
+                        p{
+                            font-size: 14px;
+                            // border: 2px solid red;
+                        }
+                        
+                    }
+                }
+                .detailContainer{
+                .Detail{
+
+                    h4{
+                        font-size: 18px;
+                        font-weight: 600;
+                    }
+                    h6{
+                        font-weight: 500;
+                        font-size: 14px;
+                    }
+                    p{
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width: 480px){
+        padding: 100px 30px;
+        .circles{
+            left: 49.2%;
+        }
+    }
+    @media (max-width: 420px){
+        .circles{
+            left: 49.0%;
+            top: 230px;
+        }
+        .btnContainer {
+            gap: 1rem;
+            .eduBtn {
+                // font-size: 12px;
+                padding: 10px 12px;
+            }
+        }
+    }
+}

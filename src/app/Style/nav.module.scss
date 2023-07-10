@@ -1,0 +1,278 @@
+$primaryColor: #0A6EBD;
+$SecondaryColor: #ffffff;
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+
+.NavBar {
+    background-color: $SecondaryColor;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 0 180px;
+    position: fixed;
+    z-index: 1;
+    width: 100vw;
+    box-shadow: 0px 2px 8px -2px rgba($color: #000000, $alpha: 0.3);
+
+    
+
+    .logo_navIcon {
+
+        .logo {
+            position: relative;
+            z-index: 1;
+
+            .logo_circle {
+                z-index: -1;
+                position: absolute;
+                top: -6px;
+                left: -12px;
+                width: 50px;
+                height: 50px;
+                background-color: $primaryColor;
+                border-radius: 50%;
+            }
+
+            a{
+                text-decoration: none;
+            h2 {
+                font-family: 'Dancing Script', cursive;
+                font-size: 32px;
+                font-weight: 700;
+                color: black;
+            }
+        }
+        }
+
+        .navIcon {
+            font-size: 18px;
+            display: none;
+        }
+
+        .closeIcon {
+            display: none;
+            font-size: 18px;
+        }
+    }
+    
+
+    .list ul {
+        display: flex;
+        margin: 0;
+        font-size: 18px;
+        color: black;
+        gap: 40px;
+
+        .Link {
+            text-decoration: none;
+            list-style: none;
+
+            li {
+                color: black;
+                // transition: ease-in-out 0.3s;
+                font-weight: 600;
+                letter-spacing: 0.05rem;
+                position: relative;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    // width: 100%;
+                    height: 2px;
+                    // transition: all 0.5s ease;
+                    // top: 0;
+                    left: 0;
+                    bottom: -5px;
+
+                }
+
+                &:hover::after {
+                    width: 100%;
+                    background-color: $primaryColor;
+                    animation: ani 0.3s linear;
+                }
+
+                @keyframes ani {
+                    0% {
+                        width: 0%;
+                    }
+
+                    25% {
+                        width: 25%;
+                    }
+
+                    50% {
+                        width: 50%;
+                    }
+
+                    75% {
+                        width: 75%;
+                    }
+
+                    100% {
+                        width: 100%;
+                    }
+
+                }
+            }
+        }
+
+        // &:hover{
+        //     .Link {
+        //         li{
+        //             background-color: red;
+        //         }
+        //     }
+        // }
+
+
+    }
+
+
+
+    @media (max-width: 1320px) {
+        padding: 0 100px;
+    }
+
+    @media (max-width: 1120px) {
+        padding: 0;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 40px;
+        
+        background-color: white;
+
+        animation: navAni 0.6s linear;
+
+
+        .logo_navIcon {
+            padding: 0px 100px;
+            display: flex;
+            width: 100%;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 20px;
+
+            // .logo{
+            //     .logo_circle{
+            //         background-color: rgb(31, 31, 31);
+            //     }
+            //     a{
+            //         h2{
+            //             color: white;
+            //         }
+            //     }
+            // }
+
+            .navIcon {
+                display: block;
+                // color: white;
+            }
+
+        }
+
+        
+
+        .list {
+            width: 100%;
+            
+            
+
+            ul {
+                // width: 100%;
+                padding: 0;
+                gap: 0 !important;
+                
+
+                .Link {
+                    
+
+                    // width: 100%;
+                    li {
+                        // width: 100%;
+                        text-align: center;
+                        padding: 15px 0;
+                        color: white;
+
+                        &:hover , &:active{
+                            background-color: white;
+                            color: $primaryColor;
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+
+
+        .listFalse {
+            display: none;
+            width: 100%;
+
+            .list ul {
+                flex-direction: column;
+                gap: 15px;
+            }
+        }
+
+    }
+
+    @keyframes navAni {
+        0%{
+            height: 500px;
+            background-color: $primaryColor;
+        }
+        25%{
+            height: 375px;
+            background-color: $primaryColor;
+        }
+        50%{
+            height: 250px;
+            background-color: $primaryColor;
+        }
+        75%{
+            height: 125px;
+            background-color: $primaryColor;
+        }
+        100%{
+            height: 0px;
+            background-color: $primaryColor;
+        }
+    }
+
+    
+
+    
+    @media (max-width: 900px) {
+        .logo_navIcon {
+        padding: 0 80px;
+        }
+    }
+
+    @media (max-width: 740px) {
+        .logo_navIcon {
+        padding: 0 50px;
+        }
+    }
+
+    @media (max-width: 480px) {
+
+        
+
+        .logo_navIcon {
+            padding: 0 30px;
+            .logo {
+                .logo_circle {
+                    width: 40px;
+                    height: 40px;
+                }
+
+                h2 {
+                    font-size: 24px;
+                }
+
+            }
+        }
+    }
+
+}
