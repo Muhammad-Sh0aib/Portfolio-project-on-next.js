@@ -20,7 +20,7 @@ const Home = () => {
         </div>
 
         <div className={styles.content}>
-          <h6>Hi I am</h6>
+          <h6>Hi, I'm</h6>
           <h2>Muhammad Shoaib</h2>
           <h6>Frontend Developer</h6>
 
