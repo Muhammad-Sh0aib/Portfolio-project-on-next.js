@@ -36,7 +36,7 @@ const About = () => {
           <h6 className={"subHeading"}>who i am</h6>
         </div> */}
 
-          <h4>I'm Muhammad Shoaib, Frontend Developer</h4>
+          <h4>I am Muhammad Shoaib, Frontend Developer</h4>
           <p>
             I am doing Bachelors in Software Engineering from Sindh Madressatul
             Islam University. I have been working on JavaScript libraries and
