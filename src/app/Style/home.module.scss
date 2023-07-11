@@ -1,7 +1,7 @@
 $primaryColor: #0A6EBD;
 
 .HomeSection {
-    
+
     background-color: rgba($color: $primaryColor, $alpha: 0.1);
     width: 100%;
     height: 100vh;
@@ -150,6 +150,7 @@ $primaryColor: #0A6EBD;
 
             .content {
                 padding: 0 80px;
+
                 h2 {
                     font-size: 32px;
                 }
@@ -161,7 +162,7 @@ $primaryColor: #0A6EBD;
 
 
                 .socailContainer {
-                    
+
 
                     .SocialImg {
                         width: 30px;
@@ -175,30 +176,21 @@ $primaryColor: #0A6EBD;
 
     }
 
-    @media (max-width: 740px){
+    @media (max-width: 740px) {
         .Container {
-            .imgContainer {
-                .img {
-                    width: 200px;
-                    height: 200px;
-                    margin-right: 25px;
-                }
-                .imgBack {
-                    width: 200px;
-                    height: 200px;
-                }
-            }
 
             .content {
                 padding: 0 50px;
+
                 h2 {
-                    font-size: 28px;
+                    width: 250px;
                 }
 
                 h6 {
                     font-size: 18px;
                     font-weight: 500;
                 }
+
                 .socailContainer {
                     .SocialImg {
                         width: 24px;
@@ -209,12 +201,41 @@ $primaryColor: #0A6EBD;
         }
     }
 
-    @media (max-width: 600px){
+    @media (max-width: 600px) {
+        .Container {
+            .imgContainer {
+                .img {
+                    width: 200px;
+                    height: 200px;
+                    margin-right: 25px;
+                }
+                .imgBack {
+                    width: 200px;
+                    height: 200px;
+                    border: 8px solid $primaryColor;
+                }
+            }
+
+            .content {
+                h2 {
+                    width: 200px;
+                    font-size: 26px;
+                }
+
+                h6 {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 480px) {
         .Container {
             .imgContainer {
                 .img {
                     width: 150px;
                     height: 150px;
+                    margin-right: 10px;
                 }
                 .imgBack {
                     width: 150px;
@@ -224,40 +245,24 @@ $primaryColor: #0A6EBD;
             }
 
             .content {
-                h2 {
-                    font-size: 20px;
-                }
-
-                h6 {
-                    font-size: 14px;
-                }
-            }
-        }
-    }
-    @media (max-width: 480px){
-        .Container {
-            .imgContainer {
-                .img {
-                    margin-right: 10px;
-                }
-            }
-
-            .content {
                 padding: 0 30px;
                 
                 h2 {
+                    font-size: 20px;
                     width: 180px;
                     letter-spacing: 0.05rem;
                 }
 
                 h6 {
                     font-size: 12px;
+                    font-weight: 500;
                     letter-spacing: 0.05rem;
                 }
             }
         }
     }
-    @media (max-width: 420px){
+
+    @media (max-width: 420px) {
         .content {
             .socailContainer {
                 margin-bottom: 60px !important;

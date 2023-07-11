@@ -159,6 +159,20 @@ $primaryColor: #0A6EBD;
     }
     @media (max-width: 480px){
         padding: 80px 30px 50px 30px;
+        .ConCardsContainer{
+        .card{
+            .iconCircle {
+                width: 50px;
+                height: 50px;
+                .contIcon{
+                    font-size: 18px;
+                }
+            }
+            h4{
+                font-size: 24px;
+            }
+        }
+    }
     }
     @media (max-width: 420px){
         .conTxt{

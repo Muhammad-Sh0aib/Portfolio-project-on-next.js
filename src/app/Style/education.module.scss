@@ -191,8 +191,16 @@ $primaryColor: #0A6EBD;
     }
     @media (max-width: 480px){
         padding: 100px 30px;
+        .sperator{
+            width: 3px;
+        }
         .circles{
             left: 49.2%;
+            top: 234px;
+            .cir{
+                width: 12px;
+                height: 12px;
+            }
         }
     }
     @media (max-width: 420px){
