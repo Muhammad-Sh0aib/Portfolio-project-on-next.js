@@ -23,7 +23,6 @@ const Project = () => {
           >
             <h2>Budget App</h2>
             <div className={styles.iconCricle}>
-              {/* <FontAwesomeIcon className={styles.codeIcon} icon={faCode} /> */}
               <FontAwesomeIcon className={styles.codeIcon} icon={faTable} />
             </div>
             <p>Budget calculator app using Html Css and JavaScript</p>
