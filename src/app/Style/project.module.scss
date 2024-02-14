@@ -8,6 +8,8 @@ $primaryColor: #0A6EBD;
 
     .CardsContainer {
         margin-top: 40px;
+        display: flex;
+        gap: 40px;
         .proCard {
             background-color: white;
             width: 380px;
@@ -137,6 +139,25 @@ $primaryColor: #0A6EBD;
     @media (max-width: 1320px) {
         padding: 100px 100px;
     }
+    @media (max-width: 940px){
+        .CardsContainer {
+            // flex-direction: column;
+            .proCard {
+                .cardBtn {
+                    // display: flex;
+                    // gap: 10px;
+                    // width: 100%;
+                    flex-direction: column;
+    
+                    a {
+                        width: 100%;
+                        // text-decoration: none;
+                    }
+
+                }
+            }
+        }
+    }
     @media (max-width: 900px){
         padding: 100px 80px;
         .CardsContainer {
@@ -168,13 +189,32 @@ $primaryColor: #0A6EBD;
             }
         }
     }
+
     @media (max-width: 740px){
         padding: 100px 50px;
+        .CardsContainer {
+            flex-direction: column;
+            .proCard {
+                width: 100%;
+                .cardBtn {
+                    // display: flex;
+                    // gap: 10px;
+                    // width: 100%;
+                    flex-direction: row;
+    
+                    a {
+                        width: 50%;
+                        // text-decoration: none;
+                    }
+
+                }
+            }
+        }
     }
     @media (max-width: 600px){
         .CardsContainer {
             .proCard {
-                width: 280px;
+                // width: 280px;
                 a {
                     h2{
                         font-size: 24px;

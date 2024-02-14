@@ -22,5 +22,17 @@
     "react-bootstrap": "^2.7.4",
     "react-dom": "18.2.0",
     "sass": "^1.63.4"
-  }
+  },
+  "description": "",
+  "main": "next.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Muhammad-Sh0aib/muhammad_shoaib.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Muhammad-Sh0aib/muhammad_shoaib/issues"
+  },
+  "homepage": "https://github.com/Muhammad-Sh0aib/muhammad_shoaib#readme"
 }
