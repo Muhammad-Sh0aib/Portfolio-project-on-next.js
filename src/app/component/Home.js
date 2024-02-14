@@ -1,13 +1,19 @@
 import Image from "next/image";
 import styles from "../Style/home.module.scss";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
 
 const Home = () => {
+  useEffect(()=>{
+    AOS.init({duration: "1000"})
+  },[])
   return (
     <div className={styles.HomeSection} id="home">
 
       <div className={styles.Container}>
 
-        <div className={styles.imgContainer}>
+        <div className={styles.imgContainer} data-aos="fade-left">
           <div className={styles.imgBack}></div>
           <Image
             className={styles.img}

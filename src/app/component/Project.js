@@ -2,8 +2,14 @@ import styles from "../Style/project.module.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTable } from "@fortawesome/free-solid-svg-icons";
 import { faCloudBolt } from "@fortawesome/free-solid-svg-icons";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
 
 const Project = () => {
+  useEffect(()=>{
+    AOS.init({duration: "1500"})
+  },[])
   return (
     <div className={styles.projectSection} id="project">
       <div className={"headingContent"}>
@@ -15,7 +21,7 @@ const Project = () => {
       <div className={styles.CardsContainer}>
 
         {/* Budget app card */}
-        <div className={styles.proCard}>
+        <div className={styles.proCard} data-aos="zoom-in-up">
           <a
             href="https://muhammad-sh0aib.github.io/Budget_web/"
             target="_blank"
@@ -50,7 +56,7 @@ const Project = () => {
         </div>
 
         {/* Weather app card */}
-        <div className={styles.proCard}>
+        <div className={styles.proCard} data-aos="zoom-in-up">
           <a
             href="https://weather-app-sigma-lilac.vercel.app/"
             target="_blank"

@@ -1,7 +1,13 @@
 import Image from "next/image";
 import styles from "../Style/about.module.scss";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
 
 const About = () => {
+  useEffect(()=>{
+    AOS.init({duration: "1500"})
+  },[])
 
   return (
     <>
@@ -14,7 +20,7 @@ const About = () => {
       </div>
 
       <div className={styles.aboutSuper}>
-        <div className={styles.aboutImg}>
+        <div className={styles.aboutImg} data-aos="flip-right">
           <Image
             className={styles.img}
             src="/bg2.png"
@@ -35,7 +41,7 @@ const About = () => {
             experimenting with different projects. I am a hardworking and
             dedicated individual who is determined to succeed in the world of
             software development. I am skilled in Html, CSS, Bootstrap,
-            JavaScript, React.js and Next.js. I am always looking for
+            JavaScript, React.js, Next.js and Ui/Ux. I am always looking for
             opportunities to grow and improve my skills.
           </p>
 

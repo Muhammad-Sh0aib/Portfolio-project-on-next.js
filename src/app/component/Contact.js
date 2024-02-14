@@ -6,8 +6,14 @@ import {
   faEnvelope,
   faMobileScreen,
 } from "@fortawesome/free-solid-svg-icons";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
 
 const Contact = () => {
+  useEffect(()=>{
+    AOS.init({duration: "1500"})
+  },[])
   return (
     <div className={styles.ContactSection} id="Contact">
       <div className={styles.mainHeading}>
@@ -31,7 +37,7 @@ const Contact = () => {
 
       <div className={styles.ConCardsContainer}>
 
-        <div className={styles.card}>
+        <div className={styles.card} data-aos="flip-down">
           <div className={styles.iconCircle}>
             <FontAwesomeIcon icon={faEnvelope} className={styles.contIcon} />
           </div>
@@ -44,7 +50,7 @@ const Contact = () => {
           </p>
         </div>
 
-        <div className={styles.card}>
+        <div className={styles.card} data-aos="flip-down">
           <div className={styles.iconCircle}>
             <FontAwesomeIcon
               icon={faMobileScreen}
@@ -58,7 +64,7 @@ const Contact = () => {
           </p>
         </div>
 
-        <div className={styles.card}>
+        <div className={styles.card} data-aos="flip-down">
           <div className={styles.iconCircle}>
             <FontAwesomeIcon icon={faLocationDot} className={styles.contIcon} />
           </div>
