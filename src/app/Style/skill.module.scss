@@ -23,7 +23,11 @@ $primaryColor: #0A6EBD;
         width: 60%;
 
         .iconName{
+            display: flex;
+            gap: 12px;
+            .icon{
 
+            }
 
             h6{
                 text-align: start;

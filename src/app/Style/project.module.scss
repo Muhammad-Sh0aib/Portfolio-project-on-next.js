@@ -1,7 +1,7 @@
 $primaryColor: #0A6EBD;
 
 .projectSection {
-    padding:180px;
+    padding: 180px;
     background-color: rgba($color: $primaryColor, $alpha: 0.1);
 
 
@@ -9,10 +9,13 @@ $primaryColor: #0A6EBD;
     .CardsContainer {
         margin-top: 40px;
         display: flex;
-        gap: 40px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 20px;
+
         .proCard {
             background-color: white;
-            width: 380px;
+            width: 31%;
             box-shadow: 0px 2px 18px 4px rgba($color: #023e6d, $alpha: 0.1);
             border-radius: 10px;
             transition: ease-in-out 0.4s;
@@ -20,34 +23,50 @@ $primaryColor: #0A6EBD;
 
             a {
                 text-decoration: none;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
+                // display: flex;
+                // flex-direction: column;
+                // align-items: center;
 
 
                 h2 {
-                    font-size: 36px;
+                    font-size: 32px;
                     font-weight: bolder;
                     color: $primaryColor;
                     transition: ease-in-out 0.4s;
                 }
 
-                .iconCricle {
-                    width: 80px;
-                    height: 80px;
-                    border-radius: 50%;
-                    margin: 20px 0;
-                    background-color: rgba($color: $primaryColor, $alpha: 0.1);
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    transition: ease-in-out 0.4s;
+                // .iconCricle {
+                //     width: 80px;
+                //     height: 80px;
+                //     border-radius: 50%;
+                //     margin: 20px 0;
+                //     background-color: rgba($color: $primaryColor, $alpha: 0.1);
+                //     display: flex;
+                //     align-items: center;
+                //     justify-content: center;
+                //     transition: ease-in-out 0.4s;
 
-                    .codeIcon {
-                        font-size: 32px;
-                        color: $primaryColor;
+                //     .codeIcon {
+                //         font-size: 32px;
+                //         color: $primaryColor;
+                //     }
+
+                // }
+
+                .imgCont {
+                    margin-bottom: 20px;
+                    margin-top: 15px;
+                    
+
+                    .img {
+                        width: 100%;
+                        height: 180px;
+                        object-fit: cover;
+                        border-radius: 6px;
+                        transition: ease-in-out 0.4s;
+                        border: 1.5px solid $primaryColor;
+                        // object-position: left;
                     }
-
                 }
 
                 p {
@@ -60,37 +79,80 @@ $primaryColor: #0A6EBD;
 
             .cardBtn {
                 display: flex;
-                gap: 10px;
+                gap: 20px;
                 width: 100%;
+                transition: ease-in-out 0.4s;
 
                 a {
                     width: 50%;
                     text-decoration: none;
                 }
 
-                .btn {
-                    border: 2px solid white;
+                .viewBtn {
+                    // border: 2px solid white;
                     border-radius: 6px;
                     padding: 12px 12px;
                     text-align: center;
                     color: white;
                     background-color: $primaryColor;
                     width: 100%;
-                    transition: ease-in-out 0.3s;
+                    transition: ease-in-out 0.4s;
+                    display: flex;
+                    justify-content: center;
+                    gap: 12px;
 
                     h6 {
                         margin: 0;
-                        font-size: 18px;
+                        font-size: 16px;
                         transition: ease-in-out 0.3s;
                     }
 
+                    .Btnicon{
+                        font-size: 18px;
+                    }
+
                     &:hover {
-                        box-shadow: 0px 2px 18px 6px rgba($color: #000000, $alpha: 0.3);
-                        background-color: rgb(243, 243, 243);
-                        border: 2px solid rgb(243, 243, 243);
-                        h6{
-                            font-weight: 600;
-                        }
+                        box-shadow: 0px 2px 18px 6px rgba($color: #000000, $alpha: 0.15);
+                        // background-color: rgb(243, 243, 243);
+                        // border: 2px solid rgb(243, 243, 243);
+
+                        // h6 {
+                        //     font-weight: 600;
+                        // }
+                    }
+                }
+
+                .gitBtn {
+                    // border: 2px solid white;
+                    border-radius: 6px;
+                    padding: 12px 12px;
+                    text-align: center;
+                    color: white;
+                    background-color: rgb(51, 48, 48);
+                    width: 100%;
+                    transition: ease-in-out 0.4s;
+                    display: flex;
+                    justify-content: center;
+                    gap: 12px;
+
+                    h6 {
+                        margin: 0;
+                        font-size: 16px;
+                        transition: ease-in-out 0.3s;
+                    }
+
+                    .Btnicon{
+                        font-size: 18px;
+                    }
+
+                    &:hover {
+                        box-shadow: 0px 2px 18px 6px rgba($color: #000000, $alpha: 0.15);
+                        // background-color: rgb(243, 243, 243);
+                        // border: 2px solid rgb(243, 243, 243);
+
+                        // h6 {
+                        //     font-weight: 600;
+                        // }
                     }
                 }
 
@@ -102,29 +164,37 @@ $primaryColor: #0A6EBD;
 
 
             &:hover {
-                transform: scale(1.05);
-                background-color: $primaryColor;
-                box-shadow: 0px 2px 18px 4px rgba($color: #000000, $alpha: 0.2);
-                color: white;
+                // transform: scale(1.05);
+                // background-color: $primaryColor;
+                // box-shadow: 0px 2px 18px 4px rgba($color: #000000, $alpha: 0.2);
+                // color: white;
                 cursor: pointer;
 
                 h2 {
-                    color: white;
+                    transform: scale(1.07);
                 }
 
-                .iconCricle {
-                    background-color: white;
+                // .iconCricle {
+                //     background-color: white;
+                // }
+                .imgCont {
+                    .img {
+                        transform: scale(1.07);
+                        box-shadow: 0px 2px 18px 4px rgba($color: #000000, $alpha: 0.15);
+                    }
                 }
-                p{
-                    color: white;
+
+                p {
+                    transform: scale(1.07);
                 }
 
 
-                .btn{
-                        color: $primaryColor;
-                        background-color: white;
-                        cursor: pointer;
-                    
+                .cardBtn {
+                    transform: scale(1.07);
+                }
+                
+                .gitBtn {
+                    transform: scale(1.07);
                 }
 
             }
@@ -138,13 +208,12 @@ $primaryColor: #0A6EBD;
 
     @media (max-width: 1320px) {
         padding: 100px 100px;
-    }
-    @media (max-width: 940px){
+
         .CardsContainer {
             .proCard {
                 .cardBtn {
                     flex-direction: column;
-    
+
                     a {
                         width: 100%;
                     }
@@ -153,30 +222,36 @@ $primaryColor: #0A6EBD;
             }
         }
     }
-    @media (max-width: 900px){
-        padding: 100px 80px;
+
+    @media (max-width: 1024px) {
         .CardsContainer {
             .proCard {
-                width: 320px;
+                // width: 320px;
+
                 a {
-                    h2{
+                    h2 {
                         font-size: 28px;
                     }
+
                     .iconCricle {
                         width: 60px;
                         height: 60px;
+
                         .codeIcon {
                             font-size: 24px;
                         }
                     }
+
                     p {
                         font-size: 14px;
                     }
                 }
+
                 .cardBtn {
                     .btn {
                         padding: 10px 8px;
-                        h6{
+
+                        h6 {
                             font-size: 14px;
                         }
                     }
@@ -185,15 +260,66 @@ $primaryColor: #0A6EBD;
         }
     }
 
-    @media (max-width: 740px){
+    @media (max-width: 940px) {
+        .CardsContainer {
+            .proCard {
+                width: 48%;
+                // .cardBtn {
+                //     flex-direction: column;
+
+                //     a {
+                //         width: 100%;
+                //     }
+
+                // }
+            }
+        }
+    }
+
+    @media (max-width: 900px) {
+        padding: 100px 80px;
+        // .CardsContainer {
+        //     .proCard {
+        //         width: 320px;
+        //         a {
+        //             h2{
+        //                 font-size: 28px;
+        //             }
+        //             .iconCricle {
+        //                 width: 60px;
+        //                 height: 60px;
+        //                 .codeIcon {
+        //                     font-size: 24px;
+        //                 }
+        //             }
+        //             p {
+        //                 font-size: 14px;
+        //             }
+        //         }
+        //         .cardBtn {
+        //             .btn {
+        //                 padding: 10px 8px;
+        //                 h6{
+        //                     font-size: 14px;
+        //                 }
+        //             }
+        //         }
+        //     }
+        // }
+    }
+
+    @media (max-width: 740px) {
         padding: 100px 50px;
+
         .CardsContainer {
             flex-direction: column;
+
             .proCard {
                 width: 100%;
+
                 .cardBtn {
                     flex-direction: row;
-    
+
                     a {
                         width: 50%;
                     }
@@ -202,28 +328,34 @@ $primaryColor: #0A6EBD;
             }
         }
     }
-    @media (max-width: 600px){
+
+    @media (max-width: 600px) {
         .CardsContainer {
             .proCard {
                 a {
-                    h2{
+                    h2 {
                         font-size: 24px;
                     }
+
                     .iconCricle {
                         width: 50px;
                         height: 50px;
+
                         .codeIcon {
                             font-size: 18px;
                         }
                     }
+
                     p {
                         font-size: 12px;
                     }
                 }
+
                 .cardBtn {
                     .btn {
                         padding: 10px 8px;
-                        h6{
+
+                        h6 {
                             font-size: 12px;
                         }
                     }
@@ -231,7 +363,8 @@ $primaryColor: #0A6EBD;
             }
         }
     }
-    @media (max-width: 480px){
+
+    @media (max-width: 480px) {
         padding: 80px 30px;
     }
 }

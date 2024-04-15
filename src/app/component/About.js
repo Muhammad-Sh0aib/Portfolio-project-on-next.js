@@ -32,7 +32,7 @@ const About = () => {
 
         <div className={styles.aboutContent}>
 
-          <h4>I'm Muhammad Shoaib, Frontend Developer</h4>
+          <h4>I'm Muhammad Shoaib, Frontend & Web Developer</h4>
           <p>
             I am doing Bachelors in Software Engineering from Sindh Madressatul
             Islam University. I have been working on JavaScript libraries and
@@ -40,8 +40,8 @@ const About = () => {
             in the field. I enjoy learning new programming languages and
             experimenting with different projects. I am a hardworking and
             dedicated individual who is determined to succeed in the world of
-            software development. I am skilled in Html, CSS, Bootstrap,
-            JavaScript, React.js, Next.js and Ui/Ux. I am always looking for
+            software development. I am skilled in Html, CSS, Bootstrap, Tailwind CSS,
+            JavaScript, React.js, Next.js, WordPress, Php, and Ui/Ux. I am always looking for
             opportunities to grow and improve my skills.
           </p>
 

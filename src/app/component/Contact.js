@@ -24,7 +24,7 @@ const Contact = () => {
       </div>
 
       <div className={styles.conTxt}>
-        <p>If you are looking for the Frontend Developer then reach out me.
+        <p>If you are looking for the Web Developer, Frontend Developer and Ui/Ux Designer then reach out me.
         You can contact me on any of the given contact details OR
         </p>
         <p className={styles.CVBtn}>
