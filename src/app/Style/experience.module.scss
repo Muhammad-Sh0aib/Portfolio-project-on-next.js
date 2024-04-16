@@ -1,0 +1,203 @@
+$primaryColor: #0A6EBD;
+
+.expSection {
+    padding: 120px 180px;
+
+    .TopHeading {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+
+        .leftContent {
+            .straightLine {
+                width: 1.2px;
+                height: 100%;
+                background-color: $primaryColor;
+            }
+
+
+        }
+
+        .rightContent {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            .CardContent {
+                position: relative;
+                .firstCircle {
+                position: absolute;
+                top: 0;
+                left: -70px;
+                img {
+                    width: 40px;
+                    height: 40px;
+                    object-fit: cover;
+                    border-radius: 50%;
+                    border: 2px solid $primaryColor;
+                    box-shadow: 0px 2px 12px -2px rgba($color: $primaryColor, $alpha: 0.2);
+                }
+            }
+            .secondCircle {
+                position: absolute;
+                top: 0px;
+                left: -70px;
+
+                img {
+                    width: 40px;
+                    height: 40px;
+                    object-fit: cover;
+                    border-radius: 50%;
+                    border: 2px solid $primaryColor;
+                    box-shadow: 0px 2px 12px -2px rgba($color: $primaryColor, $alpha: 0.2);
+                }
+            }
+                .card {
+                    border: 1px solid rgb(218, 218, 218);
+                    box-shadow: 0px 2px 18px 4px rgba($color: #161616, $alpha: 0.07);
+                    transition: all 0.3s ease-in-out;
+                    padding: 20px;
+
+                    .cardDate {
+                        background-color: $primaryColor;
+                        padding: 10px 20px;
+                        border-radius: 50px;
+                        display: inline-block;
+                        margin-bottom: 10px;
+
+                        h4 {
+                            font-size: 16px;
+                            margin: 0;
+                            color: white;
+                            display: inline;
+                        }
+                    }
+
+                    .cardTitle {
+                        font-size: 24px;
+                        font-weight: 700;
+                        letter-spacing: 0.1rem;
+                    }
+
+                    .cardSubTitle {
+                        font-size: 16px;
+                        color: rgb(114, 114, 114);
+                        font-weight: 600;
+                    }
+
+                    .cardPera {
+                        line-height: 1.6rem;
+                    }
+
+                    &:hover {
+                        box-shadow: 0px 2px 18px 4px rgba($color: #161616, $alpha: 0.15);
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+
+
+
+    @media (max-width: 1320px) {
+        padding: 100px 100px;
+    }
+
+    @media (max-width: 1120px) {
+        padding: 80px 100px;
+
+        .container {
+            .rightContent {
+                .CardContent {
+                    .card {
+                        .cardDate {
+                            h4 {
+                                font-size: 14px;
+                            }
+                        }
+
+                        .cardTitle {
+                            font-size: 20px;
+                            letter-spacing: 0rem;
+                        }
+
+                        .cardPera {
+                            font-size: 16px;
+                            margin-bottom: 0;
+                        }
+
+                        .cardSubTitle {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+    @media (max-width: 900px) {
+        padding: 80px 80px;
+
+        .container {
+            .rightContent {
+                width: 70%;
+            }
+        }
+    }
+
+    @media (max-width: 740px) {
+        padding: 80px 50px;
+    }
+
+    @media (max-width: 600px) {
+        .container {
+            gap: 30px;
+
+            .rightContent {
+                width: 100%;
+
+                .CardContent {
+                    .firstCircle{
+                        left: -50px;
+                    }
+                    .secondCircle{
+                        left: -50px;
+                    }
+                    .card {
+                        padding: 12px;
+
+                        .cardDate {
+                            h4 {
+                                font-size: 12px;
+                            }
+                        }
+
+                        .cardTitle {
+                            font-size: 18px;
+                        }
+
+                        .cardPera {
+                            font-size: 14px;
+                        }
+
+                        .cardSubTitle {
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 480px) {
+        padding: 80px 30px;
+    }
+}

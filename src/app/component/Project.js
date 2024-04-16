@@ -1,8 +1,4 @@
 import styles from "../Style/project.module.scss";
-import Image from "next/image";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faTable } from "@fortawesome/free-solid-svg-icons";
-import { faCloudBolt } from "@fortawesome/free-solid-svg-icons";
 import { MdOutlineRemoveRedEye } from "react-icons/md";
 import { FaGithub } from "react-icons/fa6";
 import { GrLinkNext } from "react-icons/gr";
@@ -37,7 +33,7 @@ const Project = () => {
               <img className={styles.img}
                 src="/goTour.png" />
             </div>
-            <p>A responsive React.js project for immersive travel trip planning.</p>
+            <p><b>Technologies: </b>HTML, CSS, Tailwind, JavaScript, React.js</p>
           </a>
           <div className={styles.cardBtn}>
             <a
@@ -76,7 +72,7 @@ const Project = () => {
               <img className={styles.img}
                 src="/weather.png" />
             </div>
-            <p>React.js weather app fetching live weather details from an API.</p>
+            <p><b>Technologies: </b>HTML, CSS, BootStrap, JavaScript, React.js</p>
           </a>
           <div className={styles.cardBtn}>
             <a
@@ -115,7 +111,7 @@ const Project = () => {
               <img className={styles.img}
                 src="/budget.png" />
             </div>
-            <p>Budget calculator app using Html Css and JavaScript</p>
+            <p><b>Technologies: </b>HTML, CSS and JavaScript</p>
           </a>
           <div className={styles.cardBtn}>
             <a

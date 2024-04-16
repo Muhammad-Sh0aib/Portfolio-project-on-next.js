@@ -8,6 +8,7 @@ import Project from './component/Project';
 import Contact from './component/Contact';
 import Footer from './component/Footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Experience from './component/Experience';
 
 
 export default function Home() {
@@ -17,6 +18,7 @@ export default function Home() {
       <HomeComp/>
       <About/>
       <Skill/>
+      <Experience/>
       <Education/>
       <Project/>
       <Contact/>
