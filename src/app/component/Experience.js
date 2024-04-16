@@ -1,7 +1,13 @@
 import React from 'react'
 import styles from "../Style/experience.module.scss";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
 
 const Experience = () => {
+    useEffect(()=>{
+        AOS.init({duration: "2000"})
+      },[])
     return (
         <>
             <div className={styles.expSection} id="experience">
@@ -23,7 +29,7 @@ const Experience = () => {
                             <div className={styles.firstCircle}>
                                 <img src='/oneClick.jpg' alt='img here' />
                             </div>
-                            <div className={styles.card}>
+                            <div className={styles.card} data-aos="fade-right">
                                 <div className={styles.cardDate}>
                                     <h4>March 2024 - Present</h4>
                                 </div>
@@ -36,7 +42,7 @@ const Experience = () => {
                             <div className={styles.secondCircle}>
                                 <img src='/aptech1.png' alt='img here' />
                             </div>
-                            <div className={styles.card}>
+                            <div className={styles.card} data-aos="fade-right">
                                 <div className={styles.cardDate}>
                                     <h4>July 2023 - Jan 2024</h4>
                                 </div>
