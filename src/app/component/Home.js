@@ -43,9 +43,9 @@ const Home = () => {
               'Ui/Ux Designer',
               1000
             ]}
-            wrapper="span"
+            wrapper="h6"
             speed={50}
-            style={{ fontSize: '2em', display: 'inline-block' }}
+            // style={{ fontSize: '2em', display: 'inline' }}
             repeat={Infinity}
           />
 
