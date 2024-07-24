@@ -33,6 +33,8 @@ const Home = () => {
 
           <TypeAnimation
             sequence={[
+              'Software Engineer',
+              1000,
               // Same substring at the start will only be typed out once, initially
               'Fronten Developer',
               1000, // wait 1s before replacing "Mice" with "Hamsters"

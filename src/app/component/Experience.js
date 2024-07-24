@@ -27,11 +27,24 @@ const Experience = () => {
                     <div className={styles.rightContent}>
                         <div className={styles.CardContent}>
                             <div className={styles.firstCircle}>
+                                <img src='/techflex.jpg' alt='img here' />
+                            </div>
+                            <div className={styles.card} data-aos="fade-right">
+                                <div className={styles.cardDate}>
+                                    <h4>June 2024 - Present</h4>
+                                </div>
+                                <h2 className={styles.cardTitle}>Faculty / Instructor</h2>
+                                <h4 className={styles.cardSubTitle}>TechFlex Computer Institute</h4>
+                                <p className={styles.cardPera}>As a teacher at TechFlex, I specialize in teaching a variety of courses, including CIT (Certificate in Information Technology), Graphic Designing, and UI/UX Designing. I focus on providing students with hands-on experience and practical knowledge, enabling them to excel in these fields. My teaching approach emphasizes creativity and technical expertise, ensuring that students gain both theoretical understanding and real-world skills.</p>
+                            </div>
+                        </div>
+                        <div className={styles.CardContent}>
+                            <div className={styles.firstCircle}>
                                 <img src='/oneClick.jpg' alt='img here' />
                             </div>
                             <div className={styles.card} data-aos="fade-right">
                                 <div className={styles.cardDate}>
-                                    <h4>March 2024 - Present</h4>
+                                    <h4>March 2024 - May 2024</h4>
                                 </div>
                                 <h2 className={styles.cardTitle}>Frontend Developer Intern (Next.js)</h2>
                                 <h4 className={styles.cardSubTitle}>OneClick Digital</h4>

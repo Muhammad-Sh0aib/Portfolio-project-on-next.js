@@ -48,7 +48,7 @@ const Education = () => {
       <div className={`${edu}`}>
         <div className={styles.MainContainer}>
           <div className={styles.dateContainer}>
-            <div className={styles.date} data-aos="fade-left"><p>Sep 2020 - Present</p></div>
+            <div className={styles.date} data-aos="fade-left"><p>Sep 2020 - June 2024</p></div>
             <div className={styles.date} data-aos="fade-left"><p>Sep 2017 - June 2019</p></div>
             <div className={styles.date} data-aos="fade-left"><p>April 2015 - May 2017</p></div>
           </div>
